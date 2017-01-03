@@ -94,10 +94,10 @@ function run(msg, matches)
 				    if not redis:get("sp:lang") then
 					    return error
 				    elseif redis:get("sp:lang") == "fa" then
-					    help = http.request("http://bayanbox.ir/view/5471839359323765817/1473700489.txt")
+					    help = http.request("http://s8.picofile.com/file/8281098250/fa_help.txt.html")
 						return help
 					elseif redis:get("sp:lang") == "en" then
-					    help = http.request("http://bayanbox.ir/view/2464499846575247722/1473726399.txt")
+					    help = http.request("http://s8.picofile.com/file/8281098026/help_en.txt.html")
 						return help
 				    elseif redis:get("sp:lang") == "فا" then
 					    help = http.request("http://bayanbox.ir/view/4775156283001435341/1473703817.txt")
